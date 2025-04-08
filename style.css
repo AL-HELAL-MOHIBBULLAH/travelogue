@@ -2,7 +2,7 @@
 :root{
     --primary-color:#2E8B57;
     --secondary-color:#F0E68C;
-    --text-accent:#ADD8E6;
+    --text-accent:#12dda08e;
     --nutral-color:#333;
     --background-light:#F8F8F8;
 }
@@ -17,6 +17,7 @@
 body{
     background-color: var(--background-light);
     color: var(--nutral-color);
+    overflow-x: hidden;
  
 }
 
@@ -61,11 +62,18 @@ body{
         color: var(--text-accent);
     
     }
-    .hero-container{
-        margin-top: 5rem;
+    .nav-container{
+        height: 60px;
+        background-color: var(--background-light);
+        margin-bottom: 5rem;
     }
+
  
   }
+
+@media only screen and (max-width: 479px){
+    
+}
 /* Navbar Responsive End */
 /* Navbar Style End */
 /* Header Section Start */
@@ -129,8 +137,6 @@ body{
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
         gap: 16px;
-        margin-top: 4rem;
-        margin-bottom: 4rem;
         max-width: 100%;
         overflow: hidden;
     }
@@ -141,11 +147,105 @@ body{
         max-width: 100%;
         max-height: 40vh;
     }
+    .nav-container{
+        height: 60px;
+        background-color: var(--background-light);
+        margin-bottom: 5rem;
+    }
 }
+
 /* Destination Responsive End */
 /* Destination Page Style End */
 
+/* travel log page style start */
+table,th,td{
+    border:1px solid var(--text-accent)
 
+}
+table{
+    width: 100vw;
+    border-collapse: collapse;
+    font-size: 1.2rem;
+    color: var(--nutral-color);
+}
+th, td{
+    padding: 10px;
+}
+/* travel log page style end */
+/* Share Story Page Style Start */
+.form-container{  
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 20px 10px;
+    max-width: 100vw;
+    background-color: var(--text-accent);
+}
+.input-filed{
+    width: 30%;
+    padding: 8px 12px;
+    margin-top: 1rem;
+}
+.input-filed:focus{
+    width: 30%;
+    padding: 8px 12px;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+#select-country{
+    margin: 1rem 0;
+}
+.experience-box{
+    padding: 1rem;
+}
+.form-submit-btn{
+    width: 20%;
+    margin: auto;
+    background-color: var(--primary-color);
+    padding: 8px 12px ;
+    border: none;
+    border-radius: 5px;
+    color: var(--nutral-color);
+    font-size: 1.2rem;
+}
+.form-submit-btn:hover{
+    background-color: var(--secondary-color);
+}
+/* Share Stroy Page Style End */
+/* Footer Section Style Start */
+.footer-container{
+    background-color: var(--nutral-color);
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+    color: #ADD8E6;
+    
+}
+.contact-container{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+   
+
+}
+.contact-container div ul li{
+    list-style-type: none;
+}
+#copyright-text{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+@media only screen and (max-width:600px){
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        max-width: 100%;
+    
+    } 
+}
+
+/* Footer Section Style End */
 /* Travelogue Styling End */
 
 

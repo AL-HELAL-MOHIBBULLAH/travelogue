@@ -1,0 +1,152 @@
+/* Travelogue Styling Start */
+:root{
+    --primary-color:#2E8B57;
+    --secondary-color:#F0E68C;
+    --text-accent:#ADD8E6;
+    --nutral-color:#333;
+    --background-light:#F8F8F8;
+}
+/* Universal Style Start From Here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Universal Style End */
+/* Common Style Start */
+body{
+    background-color: var(--background-light);
+    color: var(--nutral-color);
+ 
+}
+
+/* Common Style End */
+/* Navbar Style Start */
+.website-name{
+    font-size: 1.3rem;
+    color: var(--primary-color);
+}
+.nav-container{
+    height: 60px;
+    background-color: var(--background-light);
+}
+.nav-link-container{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 16px;
+    align-items: center;
+}
+.nav-link a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--nutral-color);
+
+}
+.nav-link a:hover{
+    color: var(--primary-color);
+}
+/* Navbar Responsive Start */
+@media only screen and (max-width: 600px) {
+    .nav-link-container {
+      display: flex;
+      flex-direction: column;
+      overflow-y: hidden;
+      padding-bottom: 10px;
+   
+    }
+    .nav-link a{
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: var(--text-accent);
+    
+    }
+    .hero-container{
+        margin-top: 5rem;
+    }
+ 
+  }
+/* Navbar Responsive End */
+/* Navbar Style End */
+/* Header Section Start */
+.hero-container{
+    background-image: url("./images/bg.jpg");
+    width: 100vw;
+    height: min(100vh - 60px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+.welcome-message{
+    font-size: 2.5rem;
+    position: relative;
+    top: 7rem;
+    text-align: center;
+    color:var(--primary-color);
+}
+
+
+
+/* Header Section End */
+
+/* Destination Page Style Start */
+.travel-card-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    gap: 16px;
+    padding-top: 3rem;
+
+}
+.travel-card{
+    border-radius: 5px;
+}
+.travel-img{
+    max-width: 100%;
+    max-height: 40vh;
+}
+.travel-location{
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    padding: 16px 0;
+}
+.travel-short-description{
+    font-size: 1rem;
+    color: var(--nutral-color);
+    padding: 16px 0;
+}
+.learn-more-btn{
+    padding: 8px 12px;
+    border: none;
+    background-color: var(--text-accent);
+    color: var(--nutral-color);
+    border-radius: 5px;
+}
+/* Destination Responsive Start */
+@media only screen and (max-width:600px){
+    .travel-card-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        gap: 16px;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .travel-card{
+        border-radius: 5px;
+    }
+    .travel-img{
+        max-width: 100%;
+        max-height: 40vh;
+    }
+}
+/* Destination Responsive End */
+/* Destination Page Style End */
+
+
+/* Travelogue Styling End */
+
+
+
